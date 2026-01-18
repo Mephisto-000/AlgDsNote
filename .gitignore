@@ -1,58 +1,25 @@
-# --------------------------
-# Visual Studio / .NET
-# --------------------------
+# ==================================
+# VSCode
+# ==================================
 
-## Build output ##
-[Bb]in/
-[Oo]bj/
-artifacts/
-
-## Visual Studio cache / user settings ##
-.vs/
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
-
-## Rider / JetBrains
-.idea/
-
-## Visual Studio Code
+# VSCode workspace settings (uncomment if you want to ignore all VSCode configs)
 .vscode/
-!.vscode/settings.json
-!.vscode/launch.json
-!.vscode/tasks.json
-!.vscode/extensions.json
+# If you want to keep specific config, list them instead of ignoring the whole folder:
+# !.vscode/settings.json
+# !.vscode/launch.json
+# !.vscode/tasks.json
+# !.vscode/extensions.json
 
-## ASP.NET Core / .NET ##
-**/Properties/launchSettings.json
-
-## NuGet ##
-*.nupkg
-**/packages/
-
-## Dotnet temp files ##
-project.lock.json
-project.fragment.lock.json
-
-## Logs ##
-logs/
-*.log
-
-## OS generated ##
-*.DS_Store
-Thumbs.db
-
-# --------------------------
+# ==================================
 # Python
-# --------------------------
+# ==================================
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
 
-# C extensions
+# C Extensions
 *.so
 
 # Distribution / packaging
@@ -69,44 +36,38 @@ ENV/
 env.bak/
 venv.bak/
 
+# uv environment (if uv creates its own env directory)
+.uv/
+.venv_uv/   # if you have this pattern
+
 # Python tooling caches
 .pytest_cache/
 .mypy_cache/
 .dmypy.json
 dmypy.json*
 
-# Test / Coverage
-htmlcov/
-.coverage
-.coverage.*
-nosetests.xml
-coverage.xml
-*.cover
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
 
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# Installer / Logs
+# Installer / log files
 pip-log.txt
 pip-delete-this-directory.txt
 
-# Python environment file
-.python-version
-
-# --------------------------
-# Misc files / Dev Tools
-# --------------------------
-
-# Environment vars
+# Local environment variables
 .env
 .env.*
 
-# Temporary files
+# ==================================
+# General Temporary Files
+# ==================================
+
+# Temporary / backup / system files
 *.tmp
 *.temp
 *.bak
+*.swp
+*~
 
-# Global OS ignore patterns (optional)
-.DS_Store
-desktop.ini
-Thumbs.db
+# Logs
+*.log
+logs/
